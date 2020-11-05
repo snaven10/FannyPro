@@ -1,5 +1,5 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #drawer class="sidenav" fixedInViewport
+  <mat-sidenav #drawer class="sidenav sidenav-left" fixedInViewport
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
@@ -8,7 +8,7 @@
       <h2 _ngcontent-rvx-c88="" class="title ltr:pl-4 rtl:pr-4 select-none flex-auto">VEX</h2>
     </mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/categories"><mat-icon>archive</mat-icon>Categories</a>
+      <a mat-list-item routerLink="/categories" class="mat-nav-list"><mat-icon>archive</mat-icon>Categories</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -24,10 +24,12 @@
       <span>FannyPro</span>
     </mat-toolbar>
     <mat-toolbar class="migas">
-      <span>All-In-One Table</span>
+      <div class="div-migas">
+        <span>All-In-One Table</span>
+      </div>
     </mat-toolbar>
-    <!-- Add Content Here -->
-    <router-outlet></router-outlet>
-    
-  </mat-sidenav-content>
+    <div class="grid">
+      <router-outlet></router-outlet>
+    </div>   
+  </mat-sidenav-content> 
 </mat-sidenav-container>

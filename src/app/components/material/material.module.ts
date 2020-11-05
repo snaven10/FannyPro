@@ -11,6 +11,8 @@ import { MatSortModule } from '@angular/material/sort';
 //card
 import {MatCardModule} from '@angular/material/card'; ;
 
+import {MatGridListModule} from '@angular/material/grid-list'; 
+
 const MaterialComponents = [
   MatToolbarModule,
   MatButtonModule,
@@ -20,7 +22,8 @@ const MaterialComponents = [
   MatTableModule,
   MatPaginatorModule,
   MatSortModule,
-  MatCardModule
+  MatCardModule,
+  MatGridListModule
 ];
 @NgModule({
   imports: [MaterialComponents],

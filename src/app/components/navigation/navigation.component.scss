@@ -2,22 +2,26 @@
   height: 100%;
 }
 
-.sidenav {
+.sidenav{
   width: 200px;
+}
+.sidenav-left{
+  background: #1a202e;
+  color: #ffffff;
+}
+.mat-nav-list{
+  color: #ffffff;
 }
 
 .sidenav .mat-toolbar {
   background: #171d29;
+  color: #ffffff;
 }
 
 .mat-toolbar.mat-primary {
   position: sticky;
   top: 0;
   z-index: 1;
-}
-
-.toolbar {
-  color: #ffffff;
 }
 
 .select-none {
@@ -47,4 +51,17 @@ img {
 .migas{
   background: #5b76fd;
   color:  #ffffff;
+  height: 13rem;
+}
+.grid{
+  margin-top: -5rem;
+  width: 80%;
+  margin-left :auto;
+  margin-right:auto;
+}
+
+.div-migas{
+  width: 80%;
+  margin-left :auto;
+  margin-right:auto;
 }
