@@ -16,7 +16,7 @@ export class SubcategoriesComponent implements AfterViewInit, OnInit {
   dataSource: SubcategoriesDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'name'];
+  displayedColumns = ['sheck','id', 'name'];
 
   ngOnInit() {
     this.dataSource = new SubcategoriesDataSource();
