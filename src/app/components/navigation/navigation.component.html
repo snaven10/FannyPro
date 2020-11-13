@@ -13,15 +13,17 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar>
-      <button
-        type="button"
-        aria-label="Toggle sidenav"
-        mat-icon-button
-        (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>FannyPro</span>
+      <button mat-raised-button color="primary">ADD NEW</button>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <fa-icon [icon]="faBell" class="notifi"></fa-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <fa-icon [icon]="faUser" class="notifi"></fa-icon>
+      </button>
     </mat-toolbar>
     <mat-toolbar class="migas">
       <div class="div-migas">
