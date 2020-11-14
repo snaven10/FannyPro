@@ -780,7 +780,12 @@ export class ProductsDataSource extends DataSource<ProductsItem> {
       const isAsc = this.sort.direction === 'asc';
       switch (this.sort.active) {
         case 'name': return compare(a.name, b.name, isAsc);
-        case 'id': return compare(+a.id, +b.id, isAsc);
+        case 'assettype': return compare(a.assettype, b.assettype, isAsc);
+        case 'location': return compare(a.location, b.location, isAsc);
+        case 'userby': return compare(a.userby, b.userby, isAsc);
+        case 'departament': return compare(a.departament, b.departament, isAsc);
+        case 'managerby': return compare(a.managerby, b.managerby, isAsc);
+        //case 'id': return compare(+a.id, +b.id, isAsc);
         default: return 0;
       }
     });

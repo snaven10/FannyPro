@@ -16,7 +16,7 @@ export class CategoriesComponent implements AfterViewInit, OnInit {
   dataSource: CategoriesDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['sheck','id', 'name', 'sub-categories'];
+  displayedColumns = ['sheck','id', 'name'];
 
   ngOnInit() {
     this.dataSource = new CategoriesDataSource();
