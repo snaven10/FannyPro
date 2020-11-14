@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
+//menu
+import { MatMenuModule } from '@angular/material/menu'; 
 //icons fontawesome
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 //icons material
@@ -21,6 +23,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCheckboxModule } from '@angular/material/checkbox'; 
 
 const MaterialComponents = [
+  MatMenuModule,
   MatCheckboxModule,
   FontAwesomeModule,
   MatBadgeModule,

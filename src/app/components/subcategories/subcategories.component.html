@@ -2,10 +2,6 @@
   <mat-card-header>
     <mat-card-title>
       Sub Categorias
-      <mat-form-field>
-        <mat-label>Filter</mat-label>
-        <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
-      </mat-form-field>
       <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
         <mat-icon>add</mat-icon>
       </button>
@@ -14,7 +10,7 @@
   <mat-card-content>
     <div class="mat-elevation-z8">
       <table mat-table class="full-width-table" matSort aria-label="Elements">
-        <!-- sheck column -->
+        <!-- sheck clumn -->
         <ng-container matColumnDef="sheck">
           <th mat-header-cell *matHeaderCellDef>
             <mat-checkbox class="example-margin"></mat-checkbox>
@@ -23,6 +19,7 @@
             <mat-checkbox class="example-margin"></mat-checkbox>
           </td>
         </ng-container>
+
         <!-- Id Column -->
         <ng-container matColumnDef="id">
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Id</th>
