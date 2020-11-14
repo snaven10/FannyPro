@@ -3,8 +3,19 @@ import { Routes, RouterModule } from '@angular/router';
 import { CategoriesComponent } from '../categories/categories.component';
 import { SubcategoriesComponent } from '../subcategories/subcategories.component';
 import { ProductsComponent } from '../inventory/products/products.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
+import { ProductsdetallsComponent } from '../inventory/productsdetalls/productsdetalls.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    pathMatch: 'full', 
+    redirectTo: 'dashboard'
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  },
   {
     path: 'categories',
     component: CategoriesComponent
@@ -16,6 +27,10 @@ const routes: Routes = [
   {
     path: 'products',
     component: ProductsComponent
+  },
+  {
+    path: 'productsdetalls',
+    component: ProductsdetallsComponent
   }
 ];
 

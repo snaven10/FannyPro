@@ -12,6 +12,7 @@ import { CategoriesComponent } from './components/categories/categories.componen
 import { SubcategoriesComponent } from './components/subcategories/subcategories.component';
 import { ProductsComponent } from './components/inventory/products/products.component';
 import { ProductsdetallsComponent } from './components/inventory/productsdetalls/productsdetalls.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ProductsdetallsComponent } from './components/inventory/productsdetalls
     SubcategoriesComponent,
     CategoriesComponent,
     ProductsComponent,
-    ProductsdetallsComponent
+    ProductsdetallsComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,7 @@ import { ProductsdetallsComponent } from './components/inventory/productsdetalls
     BrowserAnimationsModule,
     MaterialModule,
     LayoutModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
