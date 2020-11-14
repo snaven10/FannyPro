@@ -11,6 +11,7 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { SubcategoriesComponent } from './components/subcategories/subcategories.component';
 import { ProductsComponent } from './components/inventory/products/products.component';
+import { ProductsdetallsComponent } from './components/inventory/productsdetalls/productsdetalls.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { ProductsComponent } from './components/inventory/products/products.comp
     NavigationComponent,
     SubcategoriesComponent,
     CategoriesComponent,
-    ProductsComponent
+    ProductsComponent,
+    ProductsdetallsComponent
   ],
   imports: [
     BrowserModule,
