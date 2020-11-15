@@ -2,24 +2,24 @@ import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
-import { CategoriesDataSource, CategoriesItem } from './categories-datasource';
+import { ProductsDataSource, ProductsItem } from './products-datasource';
 
 @Component({
-  selector: 'app-categories',
-  templateUrl: './categories.component.html',
-  styleUrls: ['./categories.component.scss']
+  selector: 'app-products',
+  templateUrl: './products.component.html',
+  styleUrls: ['./products.component.scss']
 })
-export class CategoriesComponent implements AfterViewInit, OnInit {
+export class ProductsComponent implements AfterViewInit, OnInit {
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
-  @ViewChild(MatTable) table: MatTable<CategoriesItem>;
-  dataSource: CategoriesDataSource;
+  @ViewChild(MatTable) table: MatTable<ProductsItem>;
+  dataSource: ProductsDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['sheck','id', 'name'];
+  displayedColumns = ['sheck', 'name', 'assettype', 'location', 'userby', 'departament', 'managerby'];
 
   ngOnInit() {
-    this.dataSource = new CategoriesDataSource();
+    this.dataSource = new ProductsDataSource();
   }
 
   ngAfterViewInit() {
