@@ -3,6 +3,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
+import { MatTableDataSource } from '@angular/material/table';
 
 // TODO: Replace this with your own data model type
 export interface CategoriesItem {
@@ -99,6 +100,12 @@ export class CategoriesDataSource extends DataSource<CategoriesItem> {
         default: return 0;
       }
     });
+  }
+  dataSource = new MatTableDataSource(EXAMPLE_DATA);
+
+  applyFilters(filter) {
+    const filterValue = filter;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 }
 

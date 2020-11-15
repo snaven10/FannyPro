@@ -16,13 +16,17 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 //card
-import {MatCardModule} from '@angular/material/card'; ;
+import { MatCardModule } from '@angular/material/card'; 
+
+//form fiel
+import { MatFormFieldModule } from '@angular/material/form-field'; 
 
 import { MatGridListModule } from '@angular/material/grid-list'; 
 
 import { MatCheckboxModule } from '@angular/material/checkbox'; 
 
 const MaterialComponents = [
+  MatFormFieldModule,
   MatMenuModule,
   MatCheckboxModule,
   FontAwesomeModule,
