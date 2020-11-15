@@ -5,6 +5,11 @@ import { SubcategoriesComponent } from '../subcategories/subcategories.component
 import { ProductsComponent } from '../inventory/products/products.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { ProductsdetallsComponent } from '../inventory/productsdetalls/productsdetalls.component';
+import { OverviewComponent } from '../inventory/productdetailpages/overview/overview.component';
+import { ActivityComponent } from '../inventory/productdetailpages/activity/activity.component';
+import { ContractsComponent } from '../inventory/productdetailpages/contracts/contracts.component';
+import { RequestsComponent } from '../inventory/productdetailpages/requests/requests.component';
+import { RelationshipsComponent } from '../inventory/productdetailpages/relationships/relationships.component';
 
 const routes: Routes = [
   {
@@ -30,7 +35,34 @@ const routes: Routes = [
   },
   {
     path: 'productsdetalls',
-    component: ProductsdetallsComponent
+    component: ProductsdetallsComponent,
+    children: [
+      {
+        path: '',
+        pathMatch: 'prefix',
+        redirectTo: 'overview'
+      },
+      {
+        path: 'overview',
+        component: OverviewComponent
+      },
+      {
+        path: 'relationships',
+        component: RelationshipsComponent
+      },
+      {
+        path: 'requests',
+        component: RequestsComponent
+      },
+      {
+        path: 'contracts',
+        component: ContractsComponent
+      },
+      {
+        path: 'activity',
+        component: ActivityComponent
+      }
+    ]
   }
 ];
 

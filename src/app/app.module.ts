@@ -13,6 +13,12 @@ import { SubcategoriesComponent } from './components/subcategories/subcategories
 import { ProductsComponent } from './components/inventory/products/products.component';
 import { ProductsdetallsComponent } from './components/inventory/productsdetalls/productsdetalls.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { OverviewComponent } from './components/inventory/productdetailpages/overview/overview.component';
+import { RelationshipsComponent } from './components/inventory/productdetailpages/relationships/relationships.component';
+import { RequestsComponent } from './components/inventory/productdetailpages/requests/requests.component';
+import { ContractsComponent } from './components/inventory/productdetailpages/contracts/contracts.component';
+import { ActivityComponent } from './components/inventory/productdetailpages/activity/activity.component';
+import { InvoiceComponent } from './components/invoice/invoice.component';
 
 
 @NgModule({
@@ -23,7 +29,13 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     CategoriesComponent,
     ProductsComponent,
     ProductsdetallsComponent,
-    DashboardComponent
+    DashboardComponent,
+    OverviewComponent,
+    RelationshipsComponent,
+    RequestsComponent,
+    ContractsComponent,
+    ActivityComponent,
+    InvoiceComponent
   ],
   imports: [
     BrowserModule,
