@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CategoriesComponent } from '../categories/categories.component';
+/*import { CategoriesComponent } from '../categories/categories.component';
 import { SubcategoriesComponent } from '../subcategories/subcategories.component';
 import { ProductsComponent } from '../inventory/products/products.component';
 import { DashboardComponent } from '../dashboard/dashboard.component';
@@ -9,12 +9,12 @@ import { OverviewComponent } from '../inventory/productdetailpages/overview/over
 import { ActivityComponent } from '../inventory/productdetailpages/activity/activity.component';
 import { ContractsComponent } from '../inventory/productdetailpages/contracts/contracts.component';
 import { RequestsComponent } from '../inventory/productdetailpages/requests/requests.component';
-import { RelationshipsComponent } from '../inventory/productdetailpages/relationships/relationships.component';
+import { RelationshipsComponent } from '../inventory/productdetailpages/relationships/relationships.component';*/
 
-const routes: Routes = [
+const routes: Routes = [/*
   {
     path: '',
-    pathMatch: 'full', 
+    pathMatch: 'full',  
     redirectTo: 'dashboard'
   },
   {
@@ -64,7 +64,7 @@ const routes: Routes = [
       }
     ]
   }
-];
+*/];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes,{

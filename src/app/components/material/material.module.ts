@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
+//en uso
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
+
+//corrigiendo
+import { MatButtonModule } from '@angular/material/button';
 //menu
 import { MatMenuModule } from '@angular/material/menu'; 
 //icons fontawesome
@@ -26,14 +30,16 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCheckboxModule } from '@angular/material/checkbox'; 
 
 const MaterialComponents = [
+  //en uso
+  MatSidenavModule,
+  MatToolbarModule,
+  //to davia no
   MatFormFieldModule,
   MatMenuModule,
   MatCheckboxModule,
   FontAwesomeModule,
   MatBadgeModule,
-  MatToolbarModule,
   MatButtonModule,
-  MatSidenavModule,
   MatIconModule,
   MatListModule,
   MatTableModule,
