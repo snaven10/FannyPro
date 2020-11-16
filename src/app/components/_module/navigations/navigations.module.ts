@@ -5,6 +5,7 @@ import { ContentComponent } from '../../navigations/content/content.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from '../../navigations/menu/menu.component';
+import { AppRoutingModule } from '../../app/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { MenuComponent } from '../../navigations/menu/menu.component';
     MenuComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserAnimationsModule,
     BrowserModule,
     CommonModule,

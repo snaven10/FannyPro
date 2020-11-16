@@ -2,12 +2,9 @@ import { NgModule } from '@angular/core';
 //en uso
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-
-
-//corrigiendo
 import { MatButtonModule } from '@angular/material/button';
-//menu
 import { MatMenuModule } from '@angular/material/menu'; 
+
 //icons fontawesome
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 //icons material
@@ -33,13 +30,13 @@ const MaterialComponents = [
   //en uso
   MatSidenavModule,
   MatToolbarModule,
+  MatButtonModule,
+  MatMenuModule,
   //to davia no
   MatFormFieldModule,
-  MatMenuModule,
   MatCheckboxModule,
   FontAwesomeModule,
   MatBadgeModule,
-  MatButtonModule,
   MatIconModule,
   MatListModule,
   MatTableModule,

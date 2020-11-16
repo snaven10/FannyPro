@@ -53,17 +53,12 @@
                 </button>
             </mat-menu>
         </mat-toolbar>
-        <div *ngIf="!isdashboar">
-            <mat-toolbar class="migas">
-                <div class="div-migas">
-                    <span>All-In-One Table</span>
-                </div>
-            </mat-toolbar>
-            <div class="grid">
-                <router-outlet></router-outlet>
+        <mat-toolbar class="migas">
+            <div class="div-migas">
+                <span>All-In-One Table</span>
             </div>
-        </div>
-        <div *ngIf="isdashboar">
+        </mat-toolbar>
+        <div class="grid">
             <router-outlet></router-outlet>
         </div>
     </mat-sidenav-content>
