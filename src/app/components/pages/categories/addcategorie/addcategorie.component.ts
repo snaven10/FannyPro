@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { categorie } from 'src/app/components/_model/categorie.model';
 import { CategorieService } from 'src/app/components/_service/categorie/categorie.service';
 import { MatDialog } from '@angular/material/dialog';
+import { ViewcategorieComponent } from 'src/app/components/pages/categories/viewcategorie/viewcategorie.component'
   
 @Component({
   selector: 'app-button-addcategorie',
-  templateUrl: './button.component.html',
+  templateUrl: '../../button.component.html',
 })
   
 export class AddcategorieComponent {
@@ -31,7 +32,7 @@ export class AddCategorie implements OnInit {
   }
 
   newcategorie(): void {
-    this.CategorieService.addcategorie(this.categorie)
+    this.CategorieService.addcategorie(this.categorie);
     this.categorie = this.CategorieService.newcategorie();
   }
 }

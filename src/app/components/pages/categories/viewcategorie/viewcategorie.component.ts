@@ -9,7 +9,7 @@ import { MatTableDataSource } from '@angular/material/table';
   templateUrl: './viewcategorie.component.html',
   styleUrls: ['./viewcategorie.component.scss']
 })
-export class ViewcategorieComponent implements AfterViewInit {
+export class ViewcategorieComponent implements OnInit, AfterViewInit {
   dataSource: categorie[];
 
   displayedColumns: string[] = ['check','id','name'];
@@ -23,6 +23,14 @@ export class ViewcategorieComponent implements AfterViewInit {
     this.dataSources.filter = filterValue.trim().toLowerCase();
   }
   constructor(private CategorieService: CategorieService) { }
+
+  ngOnInit() {
+    this.dataSource = this.CategorieService.getCategorie();
+  }
+
+  public refrescar() {
+    this.dataSource = this.CategorieService.getCategorie();
+  }
 
   ngAfterViewInit() {
     this.dataSources.paginator = this.paginator;

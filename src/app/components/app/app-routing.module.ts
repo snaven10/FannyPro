@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ViewcategorieComponent } from '../pages/categories/viewcategorie/viewcategorie.component';
+import { ViewsubcategorieComponent } from '../pages/subcategories/viewsubcategorie/viewsubcategorie.component';
 /*import { CategoriesComponent } from '../categories/categories.component';
 import { SubcategoriesComponent } from '../subcategories/subcategories.component';
 import { ProductsComponent } from '../inventory/products/products.component';
@@ -25,11 +26,11 @@ const routes: Routes = [/*
   {
     path: 'categories',
     component: ViewcategorieComponent
-  }/*,
+  },
   {
     path: 'sub-categories',
-    component: SubcategoriesComponent
-  },
+    component: ViewsubcategorieComponent
+  }/*,
   {
     path: 'products',
     component: ProductsComponent
