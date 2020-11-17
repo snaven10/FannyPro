@@ -4,9 +4,10 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu'; 
-
-//icons fontawesome
-import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatDialogModule } from '@angular/material/dialog'; 
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field'; 
 //icons material
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
@@ -19,8 +20,7 @@ import { MatSortModule } from '@angular/material/sort';
 //card
 import { MatCardModule } from '@angular/material/card'; 
 
-//form fiel
-import { MatFormFieldModule } from '@angular/material/form-field'; 
+//form fiel 
 
 import { MatGridListModule } from '@angular/material/grid-list'; 
 
@@ -32,10 +32,12 @@ const MaterialComponents = [
   MatToolbarModule,
   MatButtonModule,
   MatMenuModule,
-  //to davia no
-  MatFormFieldModule,
-  MatCheckboxModule,
   FontAwesomeModule,
+  MatDialogModule,
+  MatFormFieldModule,
+  MatInputModule,
+  //to davia no
+  MatCheckboxModule,
   MatBadgeModule,
   MatIconModule,
   MatListModule,

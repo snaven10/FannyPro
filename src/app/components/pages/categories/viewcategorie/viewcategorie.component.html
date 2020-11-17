@@ -2,11 +2,12 @@
     <mat-card-header>
         <mat-card-title>
             Categories
-            <input matInput (keyup)="applyFilter($event)" placeholder="Ex. ium" #input>
-            <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
-                <mat-icon>add</mat-icon>
-            </button>
         </mat-card-title>
+        <mat-form-field>
+            <mat-label>Filter</mat-label>
+            <input matInput (keyup)="applyFilter($event)" placeholder="Search" #input>
+        </mat-form-field>
+        <app-button-addcategorie class="button"></app-button-addcategorie>
     </mat-card-header>
     <mat-card-content>
         <div class="mat-elevation-z8">
@@ -20,7 +21,7 @@
 
                 <!-- Name Column -->
                 <ng-container matColumnDef="name">
-                    <th mat-header-cell *matHeaderCellDef> Name </th>
+                    <th mat-header-cell *matHeaderCellDef> Categorie </th>
                     <td mat-cell *matCellDef="let element"> {{element.name}} </td>
                 </ng-container>
             
