@@ -12,7 +12,7 @@ import { MatTableDataSource } from '@angular/material/table';
 export class ViewcategorieComponent implements AfterViewInit {
   dataSource: categorie[];
 
-  displayedColumns: string[] = ['id','name'];
+  displayedColumns: string[] = ['check','id','name'];
 
   dataSources = new MatTableDataSource<categorie>(this.CategorieService.getCategorie());
 
