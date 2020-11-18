@@ -1,0 +1,37 @@
+<h1 mat-dialog-title>Add Product</h1>
+<div mat-dialog-content>
+    <mat-form-field appearance="fill">
+        <mat-label>Select me Categorie</mat-label>
+        <mat-select [(ngModel)]="product.category_id">
+            <mat-option *ngFor="let row of subcategorie" value="{{ row.id }}">{{ row.name }}</mat-option>
+        </mat-select>
+        <mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Product name</mat-label>
+        <input matInput [(ngModel)]="product.name">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+        <mat-label>Mano Facture</mat-label>
+        <input matInput [(ngModel)]="product.manofacture">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Count</mat-label>
+        <input matInput [(ngModel)]="product.count">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Location</mat-label>
+        <input matInput [(ngModel)]="product.location">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <input matInput [(ngModel)]="product.description">
+    </mat-form-field>
+    
+</div>
+<div mat-dialog-actions align="end">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button mat-raised-button color="primary" mat-dialog-close (click)="this.newsubProduct()"
+        cdkFocusInitial>Save</button>
+</div>

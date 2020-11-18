@@ -1,3 +1,4 @@
+import { ProductModule } from './components/_module/product/product.module';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './components/app/app.component';
 import { NavigationsModule } from './components/_module/navigations/navigations.module';
@@ -6,12 +7,13 @@ import { SubcategorieModule } from './components/_module/subcategorie/subcategor
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     NavigationsModule,
     CategorieModule,
-    SubcategorieModule
+    SubcategorieModule,
+    ProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]
