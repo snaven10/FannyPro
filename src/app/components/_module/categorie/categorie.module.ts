@@ -5,6 +5,8 @@ import { AddcategorieComponent, AddCategorie } from '../../pages/categories/addc
 import { FormsModule } from '@angular/forms';
 import { ViewcategorieComponent } from '../../pages/categories/viewcategorie/viewcategorie.component';
 import { MaterialModule } from '../../material/material.module';
+import { AppRoutingModule } from '../../app/app-routing.module';
+
 
 
 @NgModule({
@@ -14,6 +16,7 @@ import { MaterialModule } from '../../material/material.module';
     AddCategorie
   ],
   imports: [
+    AppRoutingModule,
     CommonModule,
     FormsModule,
     MaterialModule
