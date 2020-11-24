@@ -17,4 +17,4 @@ export class VendorsComponent  implements OnInit{
     this.dataSource = this.ProductService.getvendors();;
   }
 
-}
+} 
