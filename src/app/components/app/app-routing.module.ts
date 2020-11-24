@@ -3,16 +3,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ViewcategorieComponent } from '../pages/categories/viewcategorie/viewcategorie.component';
 import { ViewsubcategorieComponent } from '../pages/subcategories/viewsubcategorie/viewsubcategorie.component';
-/*import { CategoriesComponent } from '../categories/categories.component';
-import { SubcategoriesComponent } from '../subcategories/subcategories.component';
-import { ProductsComponent } from '../inventory/products/products.component';
-import { DashboardComponent } from '../dashboard/dashboard.component';
-import { ProductsdetallsComponent } from '../inventory/productsdetalls/productsdetalls.component';
-import { OverviewComponent } from '../inventory/productdetailpages/overview/overview.component';
-import { ActivityComponent } from '../inventory/productdetailpages/activity/activity.component';
-import { ContractsComponent } from '../inventory/productdetailpages/contracts/contracts.component';
-import { RequestsComponent } from '../inventory/productdetailpages/requests/requests.component';
-import { RelationshipsComponent } from '../inventory/productdetailpages/relationships/relationships.component';*/
+import { DetailComponent } from '../pages/products/productdetail/detail/detail.component';
+import { OverviewComponent } from '../pages/products/productdetail/overview/overview.component';
+import { VendorsComponent } from '../pages/products/productdetail/vendors/vendors.component';
+import { AssociatedassetsComponent } from '../pages/products/productdetail/associatedassets/associatedassets.component';
 
 const routes: Routes = [/*
   {
@@ -35,10 +29,10 @@ const routes: Routes = [/*
   {
     path: 'products',
     component: ViewproductComponent
-  }/*,
+  },
   {
     path: 'productsdetalls',
-    component: ProductsdetallsComponent,
+    component: DetailComponent,
     children: [
       {
         path: '',
@@ -47,27 +41,18 @@ const routes: Routes = [/*
       },
       {
         path: 'overview',
-        component: OverviewComponent
+        component: OverviewComponent 
       },
       {
-        path: 'relationships',
-        component: RelationshipsComponent
+        path: 'vendors',
+        component: VendorsComponent
       },
       {
-        path: 'requests',
-        component: RequestsComponent
-      },
-      {
-        path: 'contracts',
-        component: ContractsComponent
-      },
-      {
-        path: 'activity',
-        component: ActivityComponent
+        path: 'associatedassets',
+        component: AssociatedassetsComponent
       }
     ]
-  }
-*/];
+  }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes,{

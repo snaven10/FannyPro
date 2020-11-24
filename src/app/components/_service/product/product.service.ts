@@ -1,4 +1,4 @@
-import { product } from './../../_model/product.model';
+import { product, vendors } from './../../_model/product.model';
 import { Injectable } from '@angular/core';
 /*@Injectable({
   providedIn: 'root'
@@ -7,6 +7,7 @@ import { Injectable } from '@angular/core';
 export class ProductService {
 
   private product: product[];
+  private vendors: vendors[];
 
   constructor() {
     this.product = [
@@ -412,10 +413,17 @@ export class ProductService {
         "description": "ENDRA Life Sciences Inc."
       }
     ];
+    this.vendors = [
+      {vendorname: 'Logitech', price: 19.99, warrantyvalidity: '-', quantity: 1}
+    ];
    }
 
    getproduct(){
      return this.product;
+   }
+
+   getvendors(){
+    return this.vendors;
    }
 
    addproduct(product: product){

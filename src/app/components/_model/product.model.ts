@@ -7,3 +7,10 @@ export interface product {
     location: string;
     description: string;
 }
+
+export interface vendors {
+    vendorname: string;
+    price: number;
+    warrantyvalidity: string;
+    quantity: number;
+  }

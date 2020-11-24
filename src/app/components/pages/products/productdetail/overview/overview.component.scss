@@ -1,0 +1,37 @@
+.config_items {
+    margin: 30px 0;
+    border: 1px solid #EBEFF3;
+    box-sizing: border-box;
+    width: 100%;
+    table-layout: fixed;
+}
+.config_items tr td {
+    padding: 1% .5%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.config_items tr td:nth-child(1) {
+    width: 25%;
+    text-align: right;
+}
+table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table td {
+    vertical-align: top;
+}
+.light-color {
+    color: #475867;
+}
+
+.cmdb-item-detail .config_items tr td.light-color, .requester_layout .config_items tr td.light-color, .agent_layout .config_items tr td.light-color, .product-details .config_items tr td.light-color {
+    font-weight: normal;
+}
