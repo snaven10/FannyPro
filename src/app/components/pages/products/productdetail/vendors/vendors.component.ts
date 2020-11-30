@@ -14,7 +14,7 @@ export class VendorsComponent  implements OnInit{
   constructor(private ProductService: ProductService) { }
 
   ngOnInit() {
-    this.dataSource = this.ProductService.getvendors();;
+    this.dataSource = this.ProductService.getvendors();
   }
 
 } 

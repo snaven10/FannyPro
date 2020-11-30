@@ -1,1 +1,33 @@
-<p>associatedassets works!</p>
+<h2>Vendors</h2>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Vendor Name Column -->
+    <ng-container matColumnDef="vendorname">
+      <th mat-header-cell *matHeaderCellDef> Vendor Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.vendorname}} </td>
+    </ng-container>
+  
+    <!-- Price Column -->
+    <ng-container matColumnDef="price">
+      <th mat-header-cell *matHeaderCellDef> Price </th>
+      <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+    </ng-container>
+  
+    <!-- Warranty/Validity Column -->
+    <ng-container matColumnDef="warrantyvalidity">
+      <th mat-header-cell *matHeaderCellDef> Warranty/Validity </th>
+      <td mat-cell *matCellDef="let element"> {{element.warrantyvalidity}} </td>
+    </ng-container>
+  
+    <!-- Quantity Column -->
+    <ng-container matColumnDef="quantity">
+      <th mat-header-cell *matHeaderCellDef> Quantity </th>
+      <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <app-button-addasset></app-button-addasset>

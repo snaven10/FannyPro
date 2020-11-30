@@ -1,4 +1,4 @@
-import { product, vendors } from './../../_model/product.model';
+import { product, vendors,asset } from './../../_model/product.model';
 import { Injectable } from '@angular/core';
 /*@Injectable({
   providedIn: 'root'
@@ -8,6 +8,7 @@ export class ProductService {
 
   private product: product[];
   private vendors: vendors[];
+  private asset: asset[];
 
   constructor() {
     this.product = [
@@ -416,42 +417,63 @@ export class ProductService {
     this.vendors = [
       {id: 1, vendorname: 'Logitech', price: 19.99, warrantyvalidity: '-', quantity: 1}
     ];
-   }
+    this.asset = [
+      {id: 1, displayname: 'hola', userby: 'snaven', department: 'admon'}
+    ];
+  }
 
-   getproduct(){
-     return this.product;
-   }
+  getproduct(){
+    return this.product;
+  }
 
-   getvendors(){
+  getvendors(){
     return this.vendors;
-   }
+  }
 
-   addproduct(product: product){
-     this.product.push(product);
-   }
+  getasset(){
+    return this.asset;
+  }
 
-   addvendors(vendors: vendors){
+  addproduct(product: product){
+    this.product.push(product);
+  }
+
+  addvendors(vendors: vendors){
     this.vendors.push(vendors);
   }
 
-   newproduct(): product {
-     return {
-       id: this.product.length,
-       category_id: 0,
-       name: '',
-       manofacture: '',
-       count: '',
-       location: '',
-       description: ''
-     }
-   }
-   newvendor(): vendors {
+  addasset(asset: asset){
+    this.asset.push(asset);
+  }
+
+  newproduct(): product {
     return {
-       id: this.vendors.length,
-       vendorname: '',
+      id: this.product.length,
+      category_id: 0,
+      name: '',
+      manofacture: '',
+      count: '',
+      location: '',
+      description: ''
+    }
+  }
+
+  newvendor(): vendors {
+    return {
+      id: this.vendors.length,
+      vendorname: '',
       price: 0,
       warrantyvalidity: '',
       quantity: 0
+    }
+  }
+
+  newasset(): asset {
+    return {
+      id: this.asset.length,
+      displayname: '',
+      userby: '',
+      department: ''
     }
   }
 }

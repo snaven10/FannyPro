@@ -14,4 +14,11 @@ export interface vendors {
     price: number;
     warrantyvalidity: string;
     quantity: number;
-  }
+}
+
+export interface asset {
+    id: number;
+    displayname: string;
+    userby: string;
+    department: string;
+}
