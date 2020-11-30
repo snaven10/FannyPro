@@ -414,7 +414,7 @@ export class ProductService {
       }
     ];
     this.vendors = [
-      {vendorname: 'Logitech', price: 19.99, warrantyvalidity: '-', quantity: 1}
+      {id: 1, vendorname: 'Logitech', price: 19.99, warrantyvalidity: '-', quantity: 1}
     ];
    }
 
@@ -430,6 +430,10 @@ export class ProductService {
      this.product.push(product);
    }
 
+   addvendors(vendors: vendors){
+    this.vendors.push(vendors);
+  }
+
    newproduct(): product {
      return {
        id: this.product.length,
@@ -441,4 +445,13 @@ export class ProductService {
        description: ''
      }
    }
+   newvendor(): vendors {
+    return {
+       id: this.vendors.length,
+       vendorname: '',
+      price: 0,
+      warrantyvalidity: '',
+      quantity: 0
+    }
+  }
 }

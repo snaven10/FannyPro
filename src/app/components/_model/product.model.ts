@@ -9,6 +9,7 @@ export interface product {
 }
 
 export interface vendors {
+    id: number;
     vendorname: string;
     price: number;
     warrantyvalidity: string;
