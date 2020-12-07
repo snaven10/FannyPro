@@ -1,10 +1,11 @@
+import { ExternalappstComponent } from './components/pages/externalappst/externalappst.component';
 import { ProductModule } from './components/_module/product/product.module';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './components/app/app.component';
 import { NavigationsModule } from './components/_module/navigations/navigations.module';
 import { CategorieModule } from './components/_module/categorie/categorie.module';
 import { SubcategorieModule } from './components/_module/subcategorie/subcategorie.module';
-
+import { CommonModule } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +14,9 @@ import { SubcategorieModule } from './components/_module/subcategorie/subcategor
     NavigationsModule,
     CategorieModule,
     SubcategorieModule,
-    ProductModule
+    ProductModule,
+    CommonModule,
+    ExternalappstComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

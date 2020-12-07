@@ -1,1 +1,27 @@
-<p>associatedassets works!</p>
+<h2>Vendors</h2>
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- displayname Column -->
+    <ng-container matColumnDef="displayname">
+      <th mat-header-cell *matHeaderCellDef> displayname </th>
+      <td mat-cell *matCellDef="let element"> {{element.displayname}} </td>
+    </ng-container>
+  
+    <!-- userby Column -->
+    <ng-container matColumnDef="userby">
+      <th mat-header-cell *matHeaderCellDef> userby </th>
+      <td mat-cell *matCellDef="let element"> {{element.userby}} </td>
+    </ng-container>
+  
+    <!-- department Column -->
+    <ng-container matColumnDef="department">
+      <th mat-header-cell *matHeaderCellDef> department </th>
+      <td mat-cell *matCellDef="let element"> {{element.department}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  <app-button-addasset></app-button-addasset>

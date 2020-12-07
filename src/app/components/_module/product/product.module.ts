@@ -11,6 +11,8 @@ import { OverviewComponent } from '../../pages/products/productdetail/overview/o
 import { VendorsComponent } from '../../pages/products/productdetail/vendors/vendors.component';
 import { AssociatedassetsComponent } from '../../pages/products/productdetail/associatedassets/associatedassets.component';
 import { AppRoutingModule } from '../../app/app-routing.module';
+import { AddvendorsComponent, Addvendors } from '../../pages/products/productdetail/addvendors/addvendors.component';
+import { Addasset, AddassetComponent } from '../../pages/products/productdetail/addasset/addasset.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,11 @@ import { AppRoutingModule } from '../../app/app-routing.module';
     //page content product detail
     OverviewComponent,
     VendorsComponent,
-    AssociatedassetsComponent
+    AddvendorsComponent,
+    Addvendors,
+    AssociatedassetsComponent,
+    AddassetComponent,
+    Addasset
   ],
   imports: [
     CommonModule,

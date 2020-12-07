@@ -9,8 +9,16 @@ export interface product {
 }
 
 export interface vendors {
+    id: number;
     vendorname: string;
     price: number;
     warrantyvalidity: string;
     quantity: number;
-  }
+}
+
+export interface asset {
+    id: number;
+    displayname: string;
+    userby: string;
+    department: string;
+}

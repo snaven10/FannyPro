@@ -1,3 +1,4 @@
+import { ExternalappstComponent } from './../pages/externalappst/externalappst.component';
 import { ViewproductComponent } from './../pages/products/viewproduct/viewproduct.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -52,6 +53,10 @@ const routes: Routes = [/*
         component: AssociatedassetsComponent
       }
     ]
+  },
+  {
+    path: 'externalapps',
+    component: ExternalappstComponent    
   }];
 
 @NgModule({
