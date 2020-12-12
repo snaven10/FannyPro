@@ -6,9 +6,13 @@ import { NavigationsModule } from './components/_module/navigations/navigations.
 import { CategorieModule } from './components/_module/categorie/categorie.module';
 import { SubcategorieModule } from './components/_module/subcategorie/subcategorie.module';
 import { CommonModule } from '@angular/common';
+import { BreadcrumbsOptionOneComponent } from './components/navigations/crumbs/breadcrumbs-option-one/breadcrumbs-option-one.component';
+import { BreadcrumbsOptionTwoComponent } from './components/navigations/crumbs/breadcrumbs-option-two/breadcrumbs-option-two.component';
 @NgModule({
   declarations: [
     AppComponent,
+    BreadcrumbsOptionOneComponent,
+    BreadcrumbsOptionTwoComponent,
   ],
   imports: [
     NavigationsModule,
