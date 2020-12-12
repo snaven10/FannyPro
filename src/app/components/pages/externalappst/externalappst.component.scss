@@ -1,8 +1,62 @@
-.example-card {
-  max-width: 400px;
+.mi-card {
+  margin: 0;
+  width: 85%;
+}
+.c{
+  text-align: center;
+}
+.mat-card-avatar-app{
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
 }
 
-.example-header-image {
-  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-size: cover;
+.w-24 {
+  width: 6rem;
 }
+
+.h-24 {
+  height: 6rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt-3 {
+  margin-top: -1rem;
+}
+
+.mb-1 {
+  margin-bottom: -.25rem;
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.card-grid-footer{
+  height: 4rem;
+}
+.card-footer{
+  background-color: #ebebee;
+  height: 4rem;
+}
+.grid-footer{
+  height: 4rem;
+  padding: 0rem !important;
+}
+
+.grid-top{
+  margin: 0rem;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }

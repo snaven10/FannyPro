@@ -1,4 +1,4 @@
-import { ExternalappstComponent } from './components/pages/externalappst/externalappst.component';
+import { ExternalappstModule } from './components/_module/externalappst/externalappst.module';
 import { ProductModule } from './components/_module/product/product.module';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './components/app/app.component';
@@ -16,7 +16,7 @@ import { CommonModule } from '@angular/common';
     SubcategorieModule,
     ProductModule,
     CommonModule,
-    ExternalappstComponent
+    ExternalappstModule
   ],
   providers: [],
   bootstrap: [AppComponent]
