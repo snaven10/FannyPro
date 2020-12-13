@@ -1,14 +1,16 @@
-import { product, vendors,asset } from './../../_model/product.model';
+import { Product } from './../../_model/product.model';
 import { Injectable } from '@angular/core';
+import { Vendor } from '../../_model/vendor.model';
+import { Asset } from '../../_model/asset.model';
 /*@Injectable({
   providedIn: 'root'
 })*/
 @Injectable()
 export class ProductService {
 
-  private product: product[];
-  private vendors: vendors[];
-  private asset: asset[];
+  private product: Product[];
+  private vendors: Vendor[];
+  private asset: Asset[];
 
   constructor() {
     this.product = [
@@ -434,19 +436,19 @@ export class ProductService {
     return this.asset;
   }
 
-  addproduct(product: product){
+  addproduct(product: Product){
     this.product.push(product);
   }
 
-  addvendors(vendors: vendors){
-    this.vendors.push(vendors);
+  addvendors(vendor: Vendor){
+    this.vendors.push(vendor);
   }
 
-  addasset(asset: asset){
+  addasset(asset: Asset){
     this.asset.push(asset);
   }
 
-  newproduct(): product {
+  newproduct(): Product {
     return {
       id: this.product.length,
       category_id: 0,
@@ -458,7 +460,7 @@ export class ProductService {
     }
   }
 
-  newvendor(): vendors {
+  newvendor(): Vendor {
     return {
       id: this.vendors.length,
       vendorname: '',
@@ -468,7 +470,7 @@ export class ProductService {
     }
   }
 
-  newasset(): asset {
+  newasset(): Asset {
     return {
       id: this.asset.length,
       displayname: '',

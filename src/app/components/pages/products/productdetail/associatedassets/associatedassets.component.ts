@@ -1,6 +1,6 @@
 import { ProductService } from 'src/app/components/_service/product/product.service';
 import { Component, OnInit } from '@angular/core';
-import { asset } from 'src/app/components/_model/product.model';
+import { Asset } from 'src/app/components/_model/asset.model';
 
 @Component({
   selector: 'app-asset',
@@ -8,7 +8,7 @@ import { asset } from 'src/app/components/_model/product.model';
   styleUrls: ['./associatedassets.component.scss']
 })
 export class AssociatedassetsComponent implements OnInit {
-  dataSource: asset[];
+  dataSource: Asset[];
   displayedColumns: string[] = ['displayname','userby','department'];
 
   constructor(private ProductService: ProductService) { }

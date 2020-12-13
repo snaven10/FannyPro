@@ -1,4 +1,4 @@
-import { SubcategorieService } from 'src/app/components/_service/subcategorie/subcategorie.service';
+import { SubCategoryService } from 'src/app/components/_service/category/subCategory.service';
 import { FormsModule } from '@angular/forms';
 import { Addproduct, AddproductComponent } from './../../pages/products/addproduct/addproduct.component';
 import { ViewproductComponent } from './../../pages/products/viewproduct/viewproduct.component';
@@ -40,7 +40,7 @@ import { AddvendorsComponent, Addvendors } from '../../pages/products/productdet
     DetailComponent
   ],
   providers: [
-    SubcategorieService,
+    SubCategoryService,
     ProductService
   ]
 })

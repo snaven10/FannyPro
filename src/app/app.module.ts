@@ -2,9 +2,10 @@ import { ProductModule } from './components/_module/product/product.module';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './components/app/app.component';
 import { NavigationsModule } from './components/_module/navigations/navigations.module';
-import { CategorieModule } from './components/_module/categorie/categorie.module';
-import { SubcategorieModule } from './components/_module/subcategorie/subcategorie.module';
 import { AddassetComponent } from './components/pages/products/productdetail/addasset/addasset.component';
+import { CategoriesModule } from './components/_module/category/category.module';
+import { SubCategoriesModule } from './components/_module/category/subcategory.module';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,11 +13,18 @@ import { AddassetComponent } from './components/pages/products/productdetail/add
   ],
   imports: [
     NavigationsModule,
-    CategorieModule,
-    SubcategorieModule,
-    ProductModule
+    CategoriesModule,
+    SubCategoriesModule,
+    ProductModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+
+
+
+
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

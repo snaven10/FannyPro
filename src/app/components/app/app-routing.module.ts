@@ -1,17 +1,17 @@
 import { ViewproductComponent } from './../pages/products/viewproduct/viewproduct.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ViewcategorieComponent } from '../pages/categories/viewcategorie/viewcategorie.component';
-import { ViewsubcategorieComponent } from '../pages/subcategories/viewsubcategorie/viewsubcategorie.component';
 import { DetailComponent } from '../pages/products/productdetail/detail/detail.component';
 import { OverviewComponent } from '../pages/products/productdetail/overview/overview.component';
 import { VendorsComponent } from '../pages/products/productdetail/vendors/vendors.component';
 import { AssociatedassetsComponent } from '../pages/products/productdetail/associatedassets/associatedassets.component';
+import { ViewSubCategoriesComponent } from '../pages/categories/subCategory/viewSubCategory/viewSubCategories.component';
+import { ViewCategoriesComponent } from '../pages/categories/viewCategories/viewCategories.component';
 
 const routes: Routes = [/*
   {
     path: '',
-    pathMatch: 'full',  
+    pathMatch: 'full',
     redirectTo: 'dashboard'
   },
   {
@@ -20,11 +20,11 @@ const routes: Routes = [/*
   },*/
   {
     path: 'categories',
-    component: ViewcategorieComponent
+    component: ViewCategoriesComponent
   },
   {
     path: 'sub-categories',
-    component: ViewsubcategorieComponent
+    component: ViewSubCategoriesComponent
   },
   {
     path: 'products',
@@ -41,7 +41,7 @@ const routes: Routes = [/*
       },
       {
         path: 'overview',
-        component: OverviewComponent 
+        component: OverviewComponent
       },
       {
         path: 'vendors',

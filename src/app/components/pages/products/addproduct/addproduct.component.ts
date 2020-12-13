@@ -1,9 +1,9 @@
 import { ProductService } from 'src/app/components/_service/product/product.service';
-import { SubcategorieService } from 'src/app/components/_service/subcategorie/subcategorie.service';
-import { product } from './../../../_model/product.model';
+import { Product } from './../../../_model/product.model';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { subcategorie } from 'src/app/components/_model/sub.categorie.model';
+import { subCategory } from 'src/app/components/_model/subCategory.model';
+import { SubCategoryService } from 'src/app/components/_service/category/subCategory.service';
 
 @Component({
   selector: 'app-button-addproduct',
@@ -26,14 +26,14 @@ export class AddproductComponent {
 })
 
 export class Addproduct implements OnInit {
-  product: product;
-  subcategorie: subcategorie[];
+  product: Product;
+  subcategorie: subCategory[];
 
-  constructor(private ProductService: ProductService, private SubcategorieService: SubcategorieService) {}
-  
+  constructor(private ProductService: ProductService, private subcategorieService: SubCategoryService) {}
+
   ngOnInit() {
     this.product = this.ProductService.newproduct();
-    this.subcategorie = this.SubcategorieService.getsubCategory();
+    this.subcategorie = this.subcategorieService.getsubCategory();
   }
 
   newsubProduct(): void {

@@ -1,4 +1,4 @@
-export interface product {
+export class Product {
     id: number;
     category_id: number;
     name: string;
@@ -6,19 +6,4 @@ export interface product {
     count: string;
     location: string;
     description: string;
-}
-
-export interface vendors {
-    id: number;
-    vendorname: string;
-    price: number;
-    warrantyvalidity: string;
-    quantity: number;
-}
-
-export interface asset {
-    id: number;
-    displayname: string;
-    userby: string;
-    department: string;
 }

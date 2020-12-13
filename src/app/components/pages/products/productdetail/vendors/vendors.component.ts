@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { vendors } from './../../../../_model/product.model';
+import { Vendor } from 'src/app/components/_model/vendor.model';
 import { ProductService } from './../../../../_service/product/product.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { ProductService } from './../../../../_service/product/product.service';
   styleUrls: ['./vendors.component.scss']
 })
 export class VendorsComponent  implements OnInit{
-  dataSource: vendors[];
+  dataSource: Vendor[];
   displayedColumns: string[] = ['vendorname', 'price', 'warrantyvalidity', 'quantity'];
 
   constructor(private ProductService: ProductService) { }
@@ -17,4 +17,4 @@ export class VendorsComponent  implements OnInit{
     this.dataSource = this.ProductService.getvendors();
   }
 
-} 
+}

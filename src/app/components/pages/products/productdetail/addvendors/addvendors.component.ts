@@ -1,7 +1,7 @@
 import { ProductService } from 'src/app/components/_service/product/product.service';
-import { vendors } from './../../../../_model/product.model';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { Vendor } from 'src/app/components/_model/vendor.model';
 
 @Component({
   selector: 'app-button-addvendors',
@@ -25,7 +25,7 @@ export class AddvendorsComponent {
 })
 
 export class Addvendors implements OnInit {
-  vendors: vendors;
+  vendors: Vendor;
   constructor(private ProductService: ProductService){}
   ngOnInit(){
     this.vendors = this.ProductService.newvendor();

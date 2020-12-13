@@ -1,20 +1,20 @@
 import { Component, AfterViewInit, ViewChild, OnInit } from '@angular/core';
-import { subcategorie } from 'src/app/components/_model/sub.categorie.model';
+import { subCategory } from 'src/app/components/_model/subCategory.model';
 import { MatTableDataSource } from '@angular/material/table';
-import { SubcategorieService } from 'src/app/components/_service/subcategorie/subcategorie.service'
 import { MatPaginator } from '@angular/material/paginator';
+import { SubCategoryService } from 'src/app/components/_service/category/subCategory.service';
 
 @Component({
-  selector: 'app-viewsubcategorie',
-  templateUrl: './viewsubcategorie.component.html',
-  styleUrls: ['./viewsubcategorie.component.scss']
+  selector: 'app-viewsubcategories',
+  templateUrl: './viewSubCategories.component.html',
+  styleUrls: ['./viewSubCategories.component.scss']
 })
-export class ViewsubcategorieComponent implements OnInit, AfterViewInit {
-  dataSource: subcategorie[];
+export class ViewSubCategoriesComponent implements OnInit, AfterViewInit {
+  dataSource: subCategory[];
 
   displayedColumns: string[] = ['check', 'id', 'name'];
 
-  dataSources = new MatTableDataSource<subcategorie>(this.SubcategorieService.getsubCategory());
+  dataSources = new MatTableDataSource<subCategory>(this.subcategorieService.getsubCategory());
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
@@ -23,7 +23,7 @@ export class ViewsubcategorieComponent implements OnInit, AfterViewInit {
     this.dataSources.filter = filterValue.trim().toLowerCase();
   }
 
-  constructor(private SubcategorieService: SubcategorieService) { }
+  constructor(private subcategorieService: SubCategoryService) { }
 
   ngOnInit() {
     this.dataSources.paginator = this.paginator;
@@ -32,6 +32,6 @@ export class ViewsubcategorieComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.dataSources.paginator = this.paginator;
   }
-  
+
 
 }
