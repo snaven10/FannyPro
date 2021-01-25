@@ -6,12 +6,14 @@ import { NavigationsModule } from './components/_module/navigations/navigations.
 import { CategorieModule } from './components/_module/categorie/categorie.module';
 import { SubcategorieModule } from './components/_module/subcategorie/subcategorie.module';
 import { CommonModule } from '@angular/common';
+import { CrumbsModule } from './components/_module/crumbs/crumbs.module';
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
     NavigationsModule,
+    CrumbsModule,
     CategorieModule,
     SubcategorieModule,
     ProductModule,
